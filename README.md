@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+<h1 align="center">Simple Profile Card with Theme Color</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<p align="center">
+  <strong>A simple React application to display a profile card with customizable theme color.</strong>
+</p>
 
-### `npm start`
+##  Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To use this application, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone git@github.com:Nik0Sp/simple_profile_card_with_dynamic_theme_color.git`
+2. Change directory to the project folder: `cd simple_profile_card_with_dynamic_theme_color`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-### `npm test`
+##  Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application displays a profile card with a blank profile picture and details of a person. The theme color of the card can be customized by clicking on the theme color buttons. The CSS styles for the card and its elements are dynamically updated based on the selected theme color.
 
-### `npm run build`
+##  Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The main component of the application is `App`, which manages the state and event handling for updating the theme color.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### State
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The component uses the `useState` hook to manage the following state:
 
-### `npm run eject`
+- `themeColor`: Stores the currently selected theme color.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Event Handling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `handleButtonClick` function is called when a theme color button is clicked. It updates the `themeColor` state based on the selected color.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### JSX Markup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The JSX markup in the `return` statement defines the structure and appearance of the profile card and theme color buttons. It includes an image for the profile picture, headings for the name and job title, details section with follower and following counts, and buttons for follow and message actions. The theme color buttons are displayed in a separate container.
 
-## Learn More
+##  Contributions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions to this project are welcome. If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  License
 
-### Code Splitting
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use and modify the code as per the license terms.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  Image Credits
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The blank profile picture used in the application is sourced from [Pixabay](https://pixabay.com/) and created by [Stephanie Edwards](https://pixabay.com/users/wanderercreative-855399/).
